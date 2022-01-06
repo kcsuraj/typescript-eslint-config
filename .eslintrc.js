@@ -1,12 +1,13 @@
 module.exports = {
   root: true,
   parser: "@typescript-eslint/parser",
-  plugins: ["@typescript-eslint"],
+  plugins: ["@typescript-eslint", "sonarjs"],
   parserOptions: {
     project: ["./tsconfig.json"],
   },
   extends: [
     "eslint:recommended",
+    "plugin:sonarjs/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
   ],
